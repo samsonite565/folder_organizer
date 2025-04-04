@@ -40,7 +40,7 @@ SUBDIR = {
 
 def main():
     print(pyfiglet.figlet_format("Directory Organizer", font="slant"))
-    path = input("Select the path: \n").strip('"')
+    path = input("Copy and past the path: \n").strip('"')
     raw_path = repr(path)[1:-1]
     organize(raw_path, SUBDIR)
 
